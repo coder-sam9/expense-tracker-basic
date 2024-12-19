@@ -1,0 +1,7 @@
+.box{
+    background-color: aqua;
+min-height: 50px;
+border: '2px solid orange';
+font-size: 2rem;
+
+}

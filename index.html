@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>finance tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Bootstrap Practice!</h1>
+      <h2>Finance Tracker</h2>
+      <form >
+        <div class="row row-cols-3">
+        <div class="col">
+          <label for="amount" class="form-label">
+            Expenditure Amount</label
+          >
+          <!-- <div class="input-group"> -->
+            <!-- <div class="input-group-text">$</div> -->
+            <!-- <div class="form-floating"> -->
+              <input
+                class="form-control"
+                type="number"
+                id="amount"
+                placeholder="Enter amount"
+                required
+              />
+        </div>
+        <div class="col">
+          <label for="description" class="form-label">
+        Description</label
+          >
+
+          <select class="form-select form-control" id="description">
+            <option value="-">Select a decription</option>
+            <option value="petrol">Petrol</option>
+            <option value="vacation">On Vacation</option>
+            <option value="diesel">Diesel</option>
+            <option value="fun">Fun</option>
+        </select>
+        </div>
+        
+        <div class="col">
+          <label for="category" class="form-label">
+            Choose a category</label
+          >
+            <select class="form-select form-control" id="category">
+                <option value="-">Select a category</option>
+                <option value="fuel">Transportation/Fuel</option>
+                <option value="food">Food</option>
+                <option value="utility">Electricity/utilities</option>
+                <option value="entertainment">Movie/Entertainment</option>
+            </select>
+        </div>
+        <div class="col-auto">
+    
+            <button class="btn btn-primary" type="submit" id="btn-submit"> Add Expenses</button>
+        </div>
+    </div>
+      </form>
+      
+    </div>
+    <ul class="list-group expenses"></ul>
+
+  </body>
+  <script src="index.js"></script>
+</html>
